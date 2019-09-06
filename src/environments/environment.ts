@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDwGQlxUD-Tlrc8P9ljZVXBq_lg07ahzq4",
+    apiKey: "Your API KEY",
     authDomain: "firechat-5b882.firebaseapp.com",
     databaseURL: "https://firechat-5b882.firebaseio.com",
     projectId: "firechat-5b882",
