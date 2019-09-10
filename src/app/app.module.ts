@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 // Components
 import { ChatComponent } from './components/chat/chat.component';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
 
 //AngularFire
 import { AngularFireModule } from '@angular/fire';
@@ -18,11 +19,11 @@ import { environment } from '../environments/environment';
 import { ChatService } from './services/chat.service';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
