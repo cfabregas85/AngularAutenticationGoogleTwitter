@@ -35,6 +35,7 @@ export class ChatService {
     }
 
     logout() {
+      this.User = {};
       this.afAuth.auth.signOut();
     }
 
@@ -55,9 +56,11 @@ export class ChatService {
   AddMessage( text:string){
      
     let message:Message={
-        name:'Carlos',
+        name: this.User.name,
         message:text,
-        date: new Date().getTime()
+        date: new Date().getTime(),
+        uid : this.User.uid
+
       }
 
      return this.itemsCollection.add(message);
